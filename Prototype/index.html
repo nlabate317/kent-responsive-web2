@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creative Kids Home</title>
+    <meta name="description" content="Page Description Goes Here">
+  </head>
+
+<body>
+<!--..........TOP NAVIGATION ...........-->
+
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active"><img class="logo" src="Images/Header/CK_Logo.png"></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Programs.html">Programs</a></li>
+      <li><a href="Careers.html">Careers</a></li>
+      <li><a href="NewsEvents.html">News + Events</a></li>
+      <li><a href="Enroll.html">Enroll</a></li>
+  </ul>
+  </div>
+
+
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a class="icon" onclick="myFunction()"><img class="icon" src="Images/Header/CK_Hamburger.png"></a>
+
+</div>
+
+<script>
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+
+<!--.....LOADING BAR.....
+
+<div class="load-bar">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+
+LOADING bar is a fail (but this is included just for future reference)-->
+
+<!--..........SLIDER1.........
+
+
+<div class="home-slider">
+<img class="mySlides" src="Images/Home/Slider1.png" style="width:100%">
+<img class="mySlides" src="Images/Home/Slider2.png" style="width:100%">
+<img class="mySlides" src="Images/Home/Slider3.png" style="width:100%">
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+-->
+
+
+
+<!--.......SLIDER 2 .............-->
+
+<div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+         >
+  <div class="carousel-cell">
+    <div class="slider1-text">
+      <h1>Growing Up has Never Been More Fun<h1>
+        <p>At Creative Kidz, not only do we nuture your child, we teach them how to have fun.<p>
+      </div>
+            <img src="Images/Home/Slider1.png">
+    </div>
+
+
+  <div class="carousel-cell">
+    <div class="slider2-text">
+      <h1>Get Your Hands Dirty</h1>
+      <p>We incorporate play into all our classrooms.</p>
+    </div>
+            <img src="Images/Home/Slider2.png">
+    </div>
+
+
+    <div class="carousel-cell">
+      <div class="slider3-text">
+        <h1>Draw Your Dreams</h1>
+        <p>It's okay to let your mind wander—and we're here to make your child's dreams come true.</p>
+      </div>
+            <img src="Images/Home/Slider3.png">
+    </div>
+
+</div>
+
+<!-- Flickity hosts the appropriate CSS and JavaScript for you, so you don't need to download them if you don't want to.  Add the Flickity JavaScript and CSS File to the end of your HTML (before the closing body tag) -->
+
+<script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+<link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
+
+
+
+
+
+
+<!--MAIN CONTENT -->
+
+
+  <main>
+    <div class="mission">
+        <h1>Get Creative with Us</h1>
+        <h2>Our Mission is You</h2>
+          <p>Creative Kidz Kinder Care takes pride in providing the highest
+            level of care to our families. We have a children-centered
+            designed facility, and all our teachers have gone through
+            professional training. What sets us apart from any other
+            childcare service is that we believe in the creative process,
+            and how that can help your child learn.</p>
+    </div>
+
+
+    <div class="grow">
+      <img src="Images/Home/Grow.png">
+        <div class="grow-text">
+          <h2>Grow</h2>
+          <p>At Creative Kidz, we follow the Creative Curriculum, which is
+          the nation’s leading preschool and childcare curriculum. <br/><a href="Programs.html">Learn more about our programs</a></p>
+        </div>
+    </div>
+
+
+
+    <div class="engage">
+      <img src="Images/Home/Engage.png">
+      <div class="engage-text">
+        <h2>Engage</h2>
+        <p>Kids love spending time here. Young minds are encouraged
+          and nurtured with a variety of enjoyable and interesting programs
+          and activities. <br/><a href="Home.html">See how we have fun</a></p>
+      </div>
+    </div>
+
+
+    <div class="testimonials">
+        <h1>Only the Best</h1>
+        <h2>Listen to our Parents</h2>
+        <ul>
+          <li><strong>Connor started Creative Kidz</strong> Learning Center on Monday…and so far,
+            he couldn’t be happier (or healthier)!</br><span>Karen</span></li>
+          <li><strong>Special Thanks to Jonathan and Frank Smith</strong> for helping to make my
+            babies’ birthday party a blast! Would definitely recommend Creative
+            Kidz Learning Center as a place to celebrate your child’s birthday!
+            Lots of fun</br><span>Abby</span></li>
+          <li><strong>We had our daughter in a private sitters care for a year.</strong>
+            We had to make a change to a facility because our needs changed.
+            Our little one loves it so much and the staff made the transition
+            so easy for us. She has learned so much in the last year we
+            couldn’t be happier. You know a good daycare when you walk in
+            and hear children laughing and having a great time.</br><span>Dan</span></li>
+        </ul>
+    </div>
+  </main>
+
+
+  <footer>
+
+ <div class="footer">
+    <a href="index.html"><img src="Images/Footer/CK_Footer_Logo.svg" /></a>
+    <ul>
+      <li>134 Portage Rd.<br/>Kent, OH 44240<br/>330-672-3001</li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Programs.html" >Programs</a></li>
+      <li><a href="Careers.html" >Careers</a></li>
+      <li><a href="NewsEvents.html" >News + Events</a></li>
+      <li><a href="Enroll.html" >Enroll</a></li>
+      <li><a href="https://www.facebook.com" />Facebook</a></li>
+       <li><a href="mailto:CreativeKidz@gmail.com">Email Us</a></li>
+  </div>
+
+  </footer>
+
+
+
+
+
+
+
+      <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Poppins:700" rel="stylesheet">
+      <link href="Styles/CKstyle.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+  </body>
+</html>
